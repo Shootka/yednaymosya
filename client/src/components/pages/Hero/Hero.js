@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from "../../navBar/navBar";
+import NavBar from "../../NavBar/NavBar";
 import {NavLink} from "react-router-dom";
 import './style.scss'
 import Button from "../../Button/Button";
@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div className={"hero"}>
       <div style={{display: "flex", alignItems: "center", alignContent: "center", textAlign: "center"}}>
-        <NavLink to={"/"}>
+        <NavLink to={"/"} style={{border: "none"}}>
           <img src="img/logo-nobg.png" alt="logo" style={{width: '145px'}}/>
         </NavLink>
         <div>

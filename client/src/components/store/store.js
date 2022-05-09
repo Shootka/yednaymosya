@@ -1,20 +1,26 @@
 const {createStore} = require("redux");
 
 const initialState = {
-  news:{
+  news: {
     data: [],
     isLoading: true,
+    error: null
+  },
+  burgerMenu: {
+    isOpen: false,
     error: null
   }
 }
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case "SET_NEWS":{
+    case "SET_NEWS": {
       return {
-
         ...state, news: {data: [...action.payload], isLoading: false}
       };
+    }
+    case "TOGGLE_MENU": {
+      return {...state, burgerMenu: {data: action.payload}}
     }
     default:
       return state
