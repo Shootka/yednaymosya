@@ -1,8 +1,29 @@
-.hero{
+.hero {
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 15px;
   flex-direction: row;
+  padding: 10px 0;
+}
+
+.logo-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 25px;
+  color: #000000;
+  margin: 0 0 -7px 0;
+}
+
+.sub-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8.5px;
+  line-height: 10px;
+  color: #000000;
 }

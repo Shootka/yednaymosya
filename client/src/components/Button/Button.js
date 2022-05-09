@@ -1,10 +1,14 @@
 import React from 'react';
+import './style.scss'
+import {Route} from "react-router-dom";
 
-const Button = () => {
+const Button = ({route, desc}) => {
+  const handleClick = (e, route) => {
+    // <Route path={"/"}/>
+  }
+
   return (
-    <div>
-      
-    </div>
+    <button className={"unit-btn"} onClick={(e) => handleClick(e,route)}>{desc}</button>
   );
 };
 
