@@ -12,6 +12,7 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case "SET_NEWS":{
       return {
+
         ...state, news: {data: [...action.payload], isLoading: false}
       };
     }
