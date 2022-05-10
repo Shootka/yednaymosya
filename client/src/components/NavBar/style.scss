@@ -1,4 +1,5 @@
 .nav-bar {
+  padding: 0 20px;
   display: flex;
   list-style: none;
   flex-wrap: wrap;
@@ -19,18 +20,22 @@ a {
   color: #333333;
 }
 
+
+
+
+
 ///Burger////
 .menu-btn{
-  display: flex;
+  display: none;
   align-items: center;
   position: absolute;
   top: 0;
-  right:0;
   width: 26px;
   height: 26px;
   cursor: pointer;
   z-index: 1;
 }
+
 
 .menu-btn > span,
 .menu-btn > span::before,
@@ -99,4 +104,14 @@ a {
 #menu-toggle:checked ~ .menubox{
   visibility: visible;
   left: 0;
+}
+
+
+@media  (max-width: 887px){
+  .nav-bar{
+    display: none;
+  }
+  .menu-btn{
+    display: flex;
+  }
 }

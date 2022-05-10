@@ -17,7 +17,7 @@ const Hero = () => {
         </div>
       </div>
       <NavBar/>
-      <Button desc={"Donate"}/>
+      <Button desc={"Donate"} route={"/accounts"}/>
 
     </div>
   );
