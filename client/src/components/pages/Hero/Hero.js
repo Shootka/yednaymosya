@@ -9,9 +9,9 @@ const Hero = () => {
     <div className={"hero"}>
       <div style={{display: "flex", alignItems: "center", alignContent: "center", textAlign: "center"}}>
         <NavLink to={"/"} style={{border: "none"}}>
-          <img src="img/logo-nobg.png" alt="logo" style={{width: '145px'}}/>
+          <img className={"logo"} src="img/logo-nobg.png" alt="logo" style={{width: '145px'}}/>
         </NavLink>
-        <div>
+        <div className={"title-box"}>
           <p className={"logo-title"}>Єднаймося</p>
           <span className={"sub-title"}>Благодійна організація</span>
         </div>

@@ -13,7 +13,7 @@ const BurgerMenu = () => {
     eve.currentTarget.checked = !isOpen
   }
   return (
-    <div className="burger-menu" style={{marginTop: "-14px"}}>
+    <div className="burger-menu" >
       <input id="menu-toggle" type="checkbox"
              onClick={(event) => handleClick(event)}
       />

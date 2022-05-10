@@ -26,3 +26,29 @@
   line-height: 10px;
   color: #000000;
 }
+
+@media  (max-width: 887px){
+
+  .hero{
+    justify-content: center;
+    gap: 0;
+  }
+}
+@media  (max-width: 386px){
+  .logo{
+    display: none;
+  }
+  .title-box{
+    padding: 60px;
+  }
+  .logo-title{
+    font-size: 34px;
+    margin: 0 0 -3px 0;
+  }
+  .sub-title{
+    font-size: 10px;
+  }
+}
+
+
+

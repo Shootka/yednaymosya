@@ -1,6 +1,5 @@
 .unit-btn:hover {
   box-shadow: none;
-
   border-radius: 8px;
   background: linear-gradient(101deg, #00A3FF, #FAFF00);
 }
@@ -11,6 +10,7 @@
   display: inline-block;
   position: relative;
   z-index: 0;
+  margin: 0 auto;
   cursor: pointer;
 }
 
@@ -41,7 +41,15 @@
   border-radius: 8px;
   padding: 10px 60px;
 }
-.true-btn:hover{
-  color: #000000;
-}
 
+
+@media (max-width: 1088px) {
+  .true-btn{
+    padding: 10px 150px;
+  }
+}
+@media (max-width: 768px) {
+  .true-btn{
+    padding: 10px 60px;
+  }
+}
