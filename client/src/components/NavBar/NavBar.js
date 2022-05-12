@@ -2,7 +2,6 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 import "./style.scss"
 import BurgerMenu from "./BurgerMenu";
-import {useDispatch, useSelector} from "react-redux";
 import navElem from "./navList";
 
 const NavBar = () => {
