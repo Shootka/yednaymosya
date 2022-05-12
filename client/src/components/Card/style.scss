@@ -6,6 +6,12 @@
   background-size: 267px 483px;
   background-position: center;
   background-repeat: no-repeat;
+  &:hover &__hidden-block {
+    display: block;
+  }
+  &:hover &__block {
+    display: none;
+  }
 
   &__title {
     font-family: 'Roboto', sans-serif;
@@ -21,10 +27,15 @@
 
   &__hidden-block {
     display: none;
+    left: 50%;
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    bottom: 0;
+    transform: translate(-50%,-50%);
   }
 
-
   &__block {
+
     border-radius: 6px;
     margin: 0;
     padding: 0;
