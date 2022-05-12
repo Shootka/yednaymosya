@@ -5,8 +5,8 @@ import AppRoutes from "./components/routes/AppRoutes";
 
 function App() {
   return (
-    <div className={'app'} >
-      <div className={'container'}>
+    <div className={'app'}>
+      <div className={'bg'}>
         <Hero/>
         <AppRoutes/>
       </div>
