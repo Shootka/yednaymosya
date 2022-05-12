@@ -105,11 +105,14 @@ a {
   transform: rotate(90deg);
 }
 
-#menu-toggle:checked ~ .menubox {
+//#menu-toggle:checked ~ .menubox {
+//  visibility: visible;
+//  left: 0;
+//}
+.active-menu{
   visibility: visible;
-  left: 0;
+    left: 0;
 }
-
 
 @media (max-width: 887px) {
   .nav-bar {
