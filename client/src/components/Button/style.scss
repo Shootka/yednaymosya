@@ -39,15 +39,13 @@
   background: transparent;
   border: none;
   border-radius: 8px;
-  padding: 10px 60px;
+  //padding: 10px 60px;
+  height: 50px;
+  width: 200px;
 }
 
 
-@media (max-width: 1088px) {
-  .true-btn{
-    padding: 10px 150px;
-  }
-}
+
 @media (max-width: 768px) {
   .true-btn{
     padding: 10px 60px;
