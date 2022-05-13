@@ -31,15 +31,28 @@
   .hero{
     gap: 0;
     margin-bottom: 50px;
+    justify-content: center;
   }
 }
 @media  (max-width: 887px){
   .hero{
     justify-content: center;
-    gap: 0;
+    gap: 20px;
     margin: 0;
   }
 }
+@media  (max-width: 655px){
+  .hero{
+    padding: 0 50px;
+  }
+}
+@media  (max-width: 525px){
+  .hero{
+    padding: 0;
+  }
+}
+
+
 
 @media  (max-width: 386px){
   .logo{

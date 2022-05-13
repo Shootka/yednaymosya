@@ -1,8 +1,20 @@
 .main-page {
   position: relative;
-  height: 700px;
+  //height: 700px;
+  padding: 0 15px;
+  margin-bottom: 25px;
 
-  &__title{
+  &__title-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 25px;
+    @media (max-width: 768px) {
+      margin: 52px 0 23px 0;
+    }
+  }
+  &__title {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -10,7 +22,15 @@
     line-height: 35px;
     color: #FFFFFF;
     text-align: center;
-    margin-bottom: 57px;
+    @media (max-width: 768px) {
+      font-size: 27px;
+      line-height: 30px;
+    }
+  }
+  &__flag{
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 }
 
@@ -28,4 +48,9 @@
   height: 100%;
   opacity: 0.9;
   z-index: -1;
+}
+.btn-box{
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
 }

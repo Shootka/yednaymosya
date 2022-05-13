@@ -1,16 +1,14 @@
 import React from 'react';
 import './style.scss'
+import {Link} from "react-router-dom";
 
 const Button = ({route, desc}) => {
-  const handleClick = (e, route) => {
-   e.view.navigator.href = route
-  }
-
   return (
-    <div className={"unit-btn"} onClick={(e) => handleClick(e, route)}>
-      <button className={"true-btn"} >{desc}</button>
-
-    </div>
+    <Link to={route}>
+      <div className={"unit-btn"} >
+        <button className={"true-btn"}>{desc}</button>
+      </div>
+    </Link>
   );
 };
 

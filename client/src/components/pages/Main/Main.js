@@ -17,10 +17,15 @@ const Main = () => {
 
   return (
     <div className={"main-page"}>
-      <div className={"container"}>
-        <h1 className={"main-page__title"}>БЛАГОДІЙНИЙ ФОНД “ЄДНАЙМОСЯ”</h1>
+      <div className={"container "}>
+        <div className={"main-page__title-block"}>
+          <h1 className={"main-page__title"}>БЛАГОДІЙНИЙ ФОНД “ЄДНАЙМОСЯ”</h1>
+          <img className={"main-page__flag"} src="img/paint-flag.png" alt=""/>
+        </div>
         <CardList cards={newsList}/>
-        <Button desc={"Потрібна допомога?"} route={"#"}/>
+        <div className={"btn-box"}>
+          <Button desc={"Потрібна допомога?"} route={"#"}/>
+        </div>
       </div>
     </div>
   );
