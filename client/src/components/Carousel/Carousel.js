@@ -37,7 +37,7 @@ const Carousel = ({slidesList}) => {
       <Slider {...settings} >
         {slidesList?.map(img => {
           return <div>
-            <img style={{width: "100%", height:"250px"}} key={img._id} src={img.url} alt=""/>
+            <img style={{width: "220px", height:"155px"}} key={img._id} src={img.url} alt=""/>
           </div>
         })}
       </Slider>
