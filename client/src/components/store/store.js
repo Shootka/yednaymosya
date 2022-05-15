@@ -6,8 +6,13 @@ const initialState = {
     isLoading: true,
     error: null
   },
+  slides:{
+    data: [],
+    isLoading: true,
+  },
   burgerMenu: {
     isOpen: false,
+
     error: null
   }
 }
@@ -19,6 +24,10 @@ const reducer = (state = initialState, action) => {
         ...state, news: {data: [...action.payload], isLoading: false}
       };
     }
+    case "SET_SLIDES":{
+      return {
+        ...state, slides: {data: [...action.payload], isLoading: false}
+      };
     case "TOGGLE_MENU": {
       return {...state, burgerMenu: {data: action.payload}}
     }
