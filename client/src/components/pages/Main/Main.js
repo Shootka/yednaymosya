@@ -11,13 +11,14 @@ const Main = () => {
   const dispatch = useDispatch()
 
   useEffect(() => {
-    axios("newsList.json")
+    axios("http://localhost:8080/api/main-page/news")
       .then(res => dispatch({type: "SET_NEWS", payload: res.data}))
+      .catch(err => console.log(err))
   }, [])
 
   return (
     <div className={"main-page"}>
-      <div className={"container "}>
+      <div className={"container"}>
         <div className={"main-page__title-block"}>
           <h1 className={"main-page__title"}>БЛАГОДІЙНИЙ ФОНД “ЄДНАЙМОСЯ”</h1>
           <img className={"main-page__flag"} src="img/paint-flag.png" alt=""/>

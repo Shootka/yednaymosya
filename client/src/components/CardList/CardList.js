@@ -6,7 +6,7 @@ const CardList = ({cards}) => {
   return (
     <div className={"card-list"}>
       {cards.map(card => {
-        return <Card key={card.id}
+        return <Card key={card._id}
                      title={card.title}
                      url={card.url}
                      href={card.href}/>
