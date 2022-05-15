@@ -5,6 +5,11 @@ const initialState = {
     data: [],
     isLoading: true,
     error: null
+  },
+  slides:{
+    data: [],
+    isLoading: true,
+    error: null
   }
 }
 
@@ -13,6 +18,11 @@ const reducer = (state = initialState, action) => {
     case "SET_NEWS":{
       return {
         ...state, news: {data: [...action.payload], isLoading: false}
+      };
+    }
+    case "SET_SLIDES":{
+      return {
+        ...state, slides: {data: [...action.payload], isLoading: false}
       };
     }
     default:

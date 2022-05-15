@@ -1,54 +1,76 @@
 import React from 'react';
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "./slick(rewritten).css";
+import "./slick-theme(rewritten).css";
 
-const Carousel = ({imageList}) => {
+const Carousel = ({slidesList}) => {
+
+  const SampleNextArrow = (props) => {
+    const {className, onClick, style} = props;
+    return (<div
+      className={className}
+      style={{...style, display: "block"}}
+      onClick={onClick}
+    />)
+  }
+
+  const SamplePrevArrow = (props) => {
+    const {className, onClick, style} = props;
+    return (<div
+      className={className}
+      style={{...style, display: "block"}}
+      onClick={onClick}
+    />)
+  }
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 3
+    slidesToScroll: 3,
+    nextArrow: <SampleNextArrow/>,
+    prevArrow: <SamplePrevArrow/>
   };
-  return (
-    <div>
-      <Slider {...settings}>
-        {imageList?.map(img => {
-          return <div>
-            <img key={img.id} src={img.url} alt=""/>
-          </div>
-        })}
 
-        <div>
-          <h3>1</h3>
+  return (
+    <div style={{margin: '20px ', maxWidth: "1200px"}}>
+      <Slider {...settings} >
+      {/*  {slidesList?.map(img => {*/}
+      {/*    return <div>*/}
+      {/*      <img key={img.id} src={img.url} alt=""/>*/}
+      {/*    </div>*/}
+      {/*  })}*/}
+
+        <div >
+          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
+          {/*<h3>sdfdsfdsf</h3>*/}
         </div>
         <div>
-          <h3>2</h3>
+          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
         </div>
         <div>
-          <h3>3</h3>
+          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
         </div>
         <div>
-          <h3>4</h3>
+          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
         </div>
         <div>
-          <h3>5</h3>
+          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
         </div>
         <div>
-          <h3>6</h3>
+          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
         </div>
         <div>
-          <h3>7</h3>
+          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
         </div>
         <div>
-          <h3>8</h3>
+          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
         </div>
         <div>
-          <h3>9</h3>
+          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
         </div>
         <div>
-          <h3>9</h3>
+          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
         </div>
       </Slider>
     </div>
