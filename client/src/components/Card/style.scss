@@ -1,0 +1,55 @@
+.card {
+  width: 262.61px;
+  height: 470.19px;
+  border-radius: 5px;
+  position: relative;
+
+  &__image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &:hover &__hidden-block {
+    display: block;
+  }
+  &:hover &__block {
+    display: none;
+  }
+
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17.6036px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+  }
+
+  &__hidden-block {
+    display: none;
+    left: 50%;
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    bottom: 0;
+    transform: translate(-50%,-50%);
+  }
+
+  &__block {
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    bottom: 2px;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .4);
+  }
+}

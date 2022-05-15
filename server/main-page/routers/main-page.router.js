@@ -3,8 +3,10 @@ import { carouselController, newsController, iconsController } from "../controll
 
 const router = new Router()
 
+
 router.get('/carousel', carouselController)
 router.get('/icons', iconsController)
 router.get('/news', newsController)
+
 
 export default router

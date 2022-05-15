@@ -1,10 +1,15 @@
 import './App.css';
-import Footer from "./components/Footer/Footer";
+import Hero from "./components/pages/Hero/Hero";
+import AppRoutes from "./components/routes/AppRoutes";
+
 
 function App() {
   return (
-    <div className="App">
-      <Footer/>
+    <div className={'app'}>
+      <div className={'bg'}>
+        <Hero/>
+        <AppRoutes/>
+      </div>
     </div>
   );
 }
