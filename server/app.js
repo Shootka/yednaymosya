@@ -14,7 +14,7 @@ const app = express()
 
 app.use(cors());
 
-app.use(express.static(`${__dirname}/static` ))
+app.use(express.static(`static` ))
 console.log(__dirname)
 app.use(express.json())
 

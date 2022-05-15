@@ -31,47 +31,15 @@ const Carousel = ({slidesList}) => {
     nextArrow: <SampleNextArrow/>,
     prevArrow: <SamplePrevArrow/>
   };
-
+  console.log(slidesList)
   return (
     <div style={{margin: '20px ', maxWidth: "1200px"}}>
       <Slider {...settings} >
-      {/*  {slidesList?.map(img => {*/}
-      {/*    return <div>*/}
-      {/*      <img key={img.id} src={img.url} alt=""/>*/}
-      {/*    </div>*/}
-      {/*  })}*/}
-
-        <div >
-          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
-          {/*<h3>sdfdsfdsf</h3>*/}
-        </div>
-        <div>
-          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
-        </div>
-        <div>
-          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
-        </div>
-        <div>
-          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
-        </div>
-        <div>
-          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
-        </div>
-        <div>
-          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
-        </div>
-        <div>
-          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
-        </div>
-        <div>
-          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
-        </div>
-        <div>
-          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
-        </div>
-        <div>
-          <div style={{height: "150px", width: "300px", background: "red", border: "1ps solid red"}}></div>
-        </div>
+        {slidesList?.map(img => {
+          return <div>
+            <img style={{width: "100%", height:"250px"}} key={img._id} src={img.url} alt=""/>
+          </div>
+        })}
       </Slider>
     </div>
   );

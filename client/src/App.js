@@ -1,6 +1,7 @@
 import './App.css';
 import Hero from "./components/pages/Hero/Hero";
 import AppRoutes from "./components/routes/AppRoutes";
+import Footer from "./components/pages/Footer/Footer";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         <Hero/>
         <AppRoutes/>
       </div>
+      <Footer/>
     </div>
   );
 }
